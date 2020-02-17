@@ -17,6 +17,20 @@ from newsapi import NewsApiClient
 newsapi = NewsApiClient(api_key='')
 
 
+
+#Title of the Excel file
+Title_of_Excel_file = 'COMM_Lockheed_Martin'
+
+#Range of dates you want info for about the stock
+Start_date = '2020-01-25'
+End_date = '2020-03-15'
+
+#Desired Stock. NOTE:Change the Stock Symbol and name to get the info for your desired stock eg. AAPL for stock_symbol for Apple for stock_name
+stock_symbol = 'LMT'
+stock_name = 'Lockheed Martin'
+
+
+
 # --------------------------------------------------------------------------------- #
 #This function allows you to append data
 # --------------------------------------------------------------------------------- #
@@ -108,17 +122,6 @@ def color_negative_red(val):
 # --------------------------------------------------------------------------------- #
 
 
-
-#Title of the Excel file
-Title_of_Excel_file = 'COMM_Lockheed_Martin'
-
-#Range of dates you want info for about the stock
-Start_date = '2020-01-25'
-End_date = '2020-03-15'
-
-#Desired Stock. NOTE:Change the Stock Symbol and name to get the info for your desired stock eg. AAPL for stock_symbol for Apple for stock_name
-stock_symbol = 'LMT'
-stock_name = 'Lockheed Martin'
 
 #Delete any previous files before running the code
 try:
