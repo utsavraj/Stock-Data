@@ -12,3 +12,5 @@ Extracts Closing Price, Dividends and News about a stock for a given period.
   * Add it to line 17
 * Saves excel file to Desktop on default when succesfully run.
 * *Note:* News may not always be relevant. 
+
+## Example Screenshot
