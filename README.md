@@ -9,7 +9,7 @@ Created for class COMM324 - Investment & Portfolio Mgmt W2020. *Extracts Closing
 * Install Python 3.x version
 * Run the starting commands to get all the neccessary dependencies - Comments with 'pip3'
 * Get the key from NewsApi by signing up to: https://newsapi.org/
-  * Add it to line 17
+  * Add it to line 17 eg. if your key is 'abc123' then `newsapi = NewsApiClient(api_key='abc123')`
 * Saves excel file to Desktop on default when succesfully run.
 * *Note:* News may not always be relevant. 
 
