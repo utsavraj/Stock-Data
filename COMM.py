@@ -138,8 +138,8 @@ title_excel = DataFrame({stock_name : title})
 LMT = yf.Ticker(stock_symbol)
 
 #Extracts the divident info based on range of data using Yahoo Finance
-dividends = []
-dividends_temp = str(LMT.history(start=Start_date, end=End_date)['Dividends']).replace("    ", ",").replace("\n", ",").replace("Date", "").replace("Name: Dividends, dtype: int64", "")[1 :-1: ].split(",")
+dividends = []                                                                                                                                                              #int64/float64
+dividends_temp = str(LMT.history(start=Start_date, end=End_date)['Dividends']).replace("    ", ",").replace("\n", ",").replace("Date", "").replace("Name: Dividends, dtype: float64", "")[1 :-1: ].split(",")
 for i in range(len(dividends_temp)):
     if (i%2 != 0):
         dividends.append(dividends_temp[i])
@@ -148,7 +148,7 @@ for i in range(len(dividends_temp)):
 date = []
 closing_price = []
 data = yf.download(stock_symbol, start=Start_date, end=End_date) 
-temp = str(data['Close']).replace("    ", ",").replace("\n", ",").replace("Date", "").replace("Name: Close, dtype: float64", "")[1 :-1: ].split(",")
+temp = str(data['Close']).replace("    ", ",").replace("\n", ",").replace("Date", "").replace("Name: Close, dtype: c", "")[1 :-1: ].split(",")
 
 for i in range(len(temp)):
     if (i%2 == 0):
