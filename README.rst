@@ -5,7 +5,7 @@ Created for class *COMM324 - Investment & Portfolio Mgmt W2020*.
 *Extracts Closing Price, Dividends and News about a stock for a given period.*
 
 
-**Note**: Current file name is *COMM_Lockheed_Martin*, stock is *Lockheed Martin* and given period is *24/01/2020* to *30/03/2020* as that was needed for my project. This can easily be changed by changing the code as dictated in comments or code can be easily modified for user input.
+**Note**: Current file name is *COMM*, stock is *Lockheed Martin* and given period is *24/01/2020* to *30/03/2020* as that was needed for my project. This can easily be changed by changing the code as dictated in comments or code can be easily modified for user input.
 
 
 Instructions and Information
